@@ -27,11 +27,11 @@ if answer == 'start' :
         if potantial_first_number == first_number :
             if potantial_first_number != second_number :
                 ignore_list.append (first_number)
-                if (not(first_number in ignore_list)) or (not(second_number in ignore_list)) :
+                if (first_number not in ignore_list) or (second_number not in ignore_list) :
                     print ('The numbers', first_number ,'and', second_number ,'are amicable!')
 
     answer2 = input("Type 'check' if you want to see the sum of a number's proper divisors or 'finish' to close the application\n>>> ")
     while answer2 == 'check' or answer2 == 'again' :
         number = int(input ('Number: '))
-        print (Searching (number))
+        print (searching (number))
         answer2 = input ('Type "again" if you want to check another number or "finish" to close the application!\n>>> ')
