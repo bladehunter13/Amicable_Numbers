@@ -17,9 +17,9 @@ while answer != 'start' :
 
 
 if answer == 'start' :
+    
     ignore_list = []
     destination = int(input ('Until Which number should I search for Amicable numbers?\n>>> '))
-
     for first_number in range (1 , destination + 1) :
         second_number = searching (first_number)
         potantial_first_number = searching (second_number)
